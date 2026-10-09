@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Flex-flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>THỰC HÀNH CSS FLEX-FLOW</h1>
+        <p>Kết hợp flex-direction và flex-wrap</p>
+    </header>
+
+    <main>
+        <!-- Vi du 1 -->
+        <section class="bai-tap">
+            <h2>Ví dụ 1: flex-flow: row nowrap</h2>
+
+            <p>
+                Các item được sắp xếp từ trái sang phải trên cùng một hàng.
+                Khi không đủ chỗ, chúng không tự xuống dòng.
+            </p>
+
+            <div class="container container-1">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <p class="ket-qua">
+                Kết quả: Các item nằm theo thứ tự 1 → 2 → 3.
+            </p>
+        </section>
+
+        <!-- Vi du 2 -->
+        <section class="bai-tap">
+            <h2>Ví dụ 2: flex-flow: row-reverse nowrap</h2>
+
+            <p>
+                Các item được sắp xếp theo hướng ngược lại,
+                từ phải sang trái, và vẫn nằm trên cùng một hàng.
+            </p>
+
+            <div class="container container-2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+            </div>
+
+            <p class="ket-qua">
+                Kết quả: Item 1 nằm bên phải, tiếp đến Item 2 và Item 3.
+            </p>
+        </section>
+
+        <!-- Tong ket -->
+        <section class="bai-tap tong-ket">
+            <h2>Ghi nhớ</h2>
+            <ul>
+                <li><strong>flex-flow</strong> là thuộc tính viết tắt của flex-direction và flex-wrap.</li>
+                <li><strong>row</strong>: sắp xếp theo chiều ngang.</li>
+                <li><strong>row-reverse</strong>: đảo ngược hướng sắp xếp.</li>
+                <li><strong>nowrap</strong>: không tự xuống dòng.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bài thực hành CSS | Flex-flow Property</p>
+    </footer>
+
+</body>
+</html>
